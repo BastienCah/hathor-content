@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "palmares": [
+    { "id": "grammy-dance", "month": "2026-12" },
+    { "id": "grammy-country", "month": "2027-01" }
+  ],
+  "news": [
+    {
+      "id": "bienvenue",
+      "date": "2026-12-01",
+      "title": "Bienvenue dans Hathor",
+      "body": "Chaque mois, un nouveau palmarès arrive avec le Hathor Pass. Ce mois-ci : les Grammy Dance.",
+      "image": null,
+      "link": null,
+      "draft": true
+    }
+  ],
+  "message": null
+}
