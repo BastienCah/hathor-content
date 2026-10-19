@@ -16,5 +16,8 @@ les apps le récupèrent à leur prochaine ouverture (quelques minutes de cache)
 - `message` : `{ "text": "…", "until": "AAAA-MM-JJ" }` affiché sous le billet des
   Découvertes, ou `null`.
 
+`"draft": true` marche partout (actu, message, palmarès) : visible seulement dans
+les builds perso, pour relire avant de publier. Le retirer (ou `false`) publie.
+
 Le fichier doit rester du JSON valide (guillemets droits, virgules) : en cas
 d'erreur l'app garde la dernière version reçue.
