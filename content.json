@@ -1,8 +1,20 @@
 {
+  "_aide": [
+    "Tout ce qui commence par _ est ignoré par l'app : aide et modèles à copier.",
+    "draft: true = visible seulement dans les builds perso (relecture). Retirer ou false pour publier.",
+    "Après modification : Commit changes, attendre 1-2 min, fermer et rouvrir l'app.",
+    "Une erreur dans une entrée ne casse que cette entrée, le reste s'applique."
+  ],
   "version": 1,
   "palmares": [
-    { "id": "grammy-dance", "month": "2026-10" },
-    { "id": "grammy-country", "month": "2027-01" }
+    {
+      "id": "grammy-dance",
+      "month": "2026-10"
+    },
+    {
+      "id": "grammy-country",
+      "month": "2027-01"
+    }
   ],
   "news": [
     {
@@ -12,8 +24,52 @@
       "body": "Chaque mois, un nouveau palmarès arrive avec le Hathor Pass. Ce mois-ci : les Grammy Dance.",
       "image": null,
       "link": null,
-      "draft": true
+      "draft": true,
+      "keep": false
     }
   ],
-  "message": "Weekend Special BB"
+  "message": "Weekend Special BB",
+  "_modeles": {
+    "palmares_deja_dans_l_app": {
+      "id": "grammy-dance",
+      "month": "2026-12"
+    },
+    "palmares_nouveau": {
+      "id": "grammy-jazz",
+      "month": "2027-02",
+      "title": "Grammy · Meilleur album jazz",
+      "shortTitle": "Grammy · Jazz",
+      "category": "Meilleur album jazz",
+      "blurb": "Le meilleur album jazz de l'année.",
+      "org": "Grammy",
+      "color": "#C8A24A",
+      "kind": "albums",
+      "items": [
+        {
+          "t": "Kind of Blue",
+          "a": "Miles Davis",
+          "y": 1959
+        }
+      ],
+      "draft": true
+    },
+    "actu": {
+      "id": "un-identifiant-unique",
+      "date": "2026-12-01",
+      "title": "Titre",
+      "body": "Texte de l'actu.",
+      "image": "https://exemple.com/image.jpg",
+      "link": "https://exemple.com",
+      "keep": true,
+      "draft": true
+    },
+    "actu_aide": "id unique (le changer = nouvelle actu, à nouveau non lue). keep: true = reste dans « Actus » une fois fermée, false = disparaît. image et link : null si aucun.",
+    "message_simple": "Week-end spécial : billets doublés",
+    "message_complet": {
+      "text": "Week-end spécial : billets doublés",
+      "until": "2026-12-07",
+      "draft": true
+    },
+    "message_aide": "Affiché sous le billet (Explore et Découvertes). until = dernier jour. null = aucun message."
+  }
 }
