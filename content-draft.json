@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "palmares": [
+    { "id": "grammy-dance", "month": "2026-12" },
+    { "id": "grammy-country", "month": "2027-01" }
+  ],
+  "news": [],
+  "message": null
+}
+
+// ═══════════════════════════════ AIDE ═══════════════════════════════
+// Les lignes qui commencent par // sont ignorées par l'app.
+// Après modification : « Commit changes », attendre 1-2 min, fermer et rouvrir l'app.
+// FICHIER D'ESSAI : lu seulement par tes builds perso (les utilisateurs lisent
+// content.json). Teste ici librement ; quand c'est bon, recopie dans content.json.
+//
+// ── PALMARÈS (un par mois, sortie le 1er à minuit) ──
+// Déjà dans l'app :   { "id": "grammy-dance", "month": "2026-12" }
+// Nouveau :           { "id": "grammy-jazz", "month": "2027-02",
+//                       "title": "Grammy · Meilleur album jazz",
+//                       "shortTitle": "Grammy · Jazz",
+//                       "blurb": "Le meilleur album jazz de l'année.",
+//                       "org": "Grammy", "color": "#C8A24A", "kind": "albums",
+//                       "items": [ { "t": "Kind of Blue", "a": "Miles Davis", "y": 1959 } ] }
+//   kind : "albums" ou "tracks"   ·   org : Billboard, Grammy, Oscar…
+//   Rien : "palmares": []  (Électro et Country sortent quand même à leur date)
+//
+// ── ACTUS (en haut d'Explore) ──
+//   { "id": "noel-2026", "date": "2026-12-24", "title": "Joyeux Noël",
+//     "body": "Texte de l'actu.", "image": null, "link": null, "keep": false }
+//   id : unique (le changer = nouvelle actu, à nouveau non lue)
+//   image / link : une adresse https://… ou null
+//   keep : true = reste dans « Actus » une fois fermée, false = disparaît
+//   Rien : "news": []
+//
+// ── MESSAGE (sous le billet, Explore et Découvertes) ──
+//   Simple :  "message": "Week-end spécial : billets doublés"
+//   Complet : "message": { "text": "Week-end spécial", "until": "2026-12-07" }
+//   until : dernier jour d'affichage   ·   Rien : "message": null

@@ -11,7 +11,9 @@
 // ═══════════════════════════════ AIDE ═══════════════════════════════
 // Les lignes qui commencent par // sont ignorées par l'app.
 // Après modification : « Commit changes », attendre 1-2 min, fermer et rouvrir l'app.
-// Partout : "draft": true = visible seulement dans tes builds perso (relecture).
+// POUR TESTER : modifie content-draft.json (même format). Seuls tes builds perso
+// le lisent ; les utilisateurs ne voient que content.json. Quand c'est bon,
+// recopie le contenu ici.
 //
 // ── PALMARÈS (un par mois, sortie le 1er à minuit) ──
 // Déjà dans l'app :   { "id": "grammy-dance", "month": "2026-12" }
